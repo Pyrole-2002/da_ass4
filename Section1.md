@@ -57,6 +57,8 @@ Strategies to mitigate impact:
 | **C** | 24 | 10 | 13 | 17 |
 | **D** | 39 | 20 | 15 | 36 |
 
+![alt text](image.png)
+
 ## 4.  Compare the results obtained for one-vs-one and one-vs-all (which according to you performs better for the above dataset)
 
 For this dataset, OvO performs just slightly better than OvA. This might be because OvA trains classifiers for K classes. Each classifier is trained on entire dataset. OvO trains many more classifiers, each classifier is trained only on a subset of data belonging to the 2 classes it separates. This makes OvO less prone to class imbalance as each binary problem would be more balanced.
